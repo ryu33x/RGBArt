@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.controls {
+    margin: 15px 0;
+}
+
+.control {
+    margin: 10px 0;
+}
+
+.control label {
+    font-size: 14px;
+    color: #333;
+}
+
+.control input[type="range"] {
+    width: 150px;
+    margin: 0 10px;
+}
+
+.control span {
+    font-size: 14px;
+    color: #666;
+}
+
+.image-container {
+    margin: 20px 0;
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+#status {
+    color: #666;
+    margin-top: 10px;
+}
+
+canvas {
+    border: 1px solid #ddd;
+}
+/* styles.css */
+#saveButton {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#saveButton:hover {
+    background-color: #218838;
+}

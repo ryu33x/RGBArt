@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Art Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Arte RGB</h1>
+        <button id="generateButton">Generar Imagen</button>
+        <button id="saveButton">Guardar Imagen</button> <!-- Nuevo botón -->
+        <div class="controls">
+            <div class="control">
+                <label for="contrast">Contraste: </label>
+                <input type="range" id="contrast" min="0" max="10" step="0.1" value="1">
+                <span id="contrastValue">1.0</span>
+            </div>
+            <div class="control">
+                <label for="hue">Tinte: </label>
+                <input type="range" id="hue" min="-720" max="720" step="1" value="0">
+                <span id="hueValue">0°</span>
+            </div>
+            <div class="control">
+                <label for="saturation">Saturación: </label>
+                <input type="range" id="saturation" min="0" max="5" step="0.1" value="1">
+                <span id="saturationValue">1.0</span>
+            </div>
+        </div>
+        <div id="imageContainer" class="image-container"></div>
+        <div id="status">Estado: Listo</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
